@@ -24,7 +24,7 @@ jobs:
         run: echo ${{ format('Hello {0} {1} {2}', 'Mona', 'the', 'Octocat') }}
       - name: The job has succeeded
         if: ${{ success() }}
-        run: "echo: success"
+        run: echo "success"
       - name: The job has failed
         if: ${{ failure() }}""
-        run: "echo: failure"
+        run: echo "failure"
