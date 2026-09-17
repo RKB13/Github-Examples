@@ -27,3 +27,4 @@ jobs:
         run: "echo: success"
       - name: The job has failed
         if: ${{ failure() }}""
+        run: "echo: failure"
